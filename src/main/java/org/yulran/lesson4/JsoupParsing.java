@@ -23,7 +23,6 @@ public class JsoupParsing {
                 //вывод тестов на странице и их адреса для перехода на них
             Elements links = document.select(".test-item");
 
-
             for (Element link : links) {
                 // текст ссылки(название предмета)
                 String linkText = link.text();
@@ -33,7 +32,6 @@ public class JsoupParsing {
 
                 System.out.println("Текст ссылки: " + linkText);
                 System.out.println("Адрес ссылки: " + linkHref);
-
             }
             }
         } catch (IOException e) {
